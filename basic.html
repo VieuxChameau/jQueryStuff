@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery tests</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="scripts/application.js"></script>
+    </head>
+    <body>
+        <h1>Original text</h1>
+        <p>Test</p>
+        <ul id="countries">
+            <li>France</li>
+            <li>GB</li>
+            <li>USA</li>
+        </ul>
+        <ul>
+            <li>Paris</li>
+            <li>London</li>
+            <li class="defaultCity">New York</li>
+        </ul>
+
+
+
+        <ul id="cheese">
+            <li>Cheedar</li>
+            <li>
+                <ul id="frenchCheese">
+                    <li>Camenbert</li>
+                    <li>Comte</li>
+                </ul>
+            </li>
+            <li>USA</li>
+        </ul>
+
+        <button value="Button">My button</button>
+
+        <button id="button1">Button 1</button>
+        <button id="button2">Button 2</button>
+        <button id="button3">Button 3</button>
+
+        <div id="all-tours">
+            <h1>Guided Tours</h1>
+            <ul>
+                <li class="usa tour on-sale" data-discount="299">
+                    <h2>New York, New York</h2>
+                    <span class="details">$1,899 for 7 nights</span>
+                    <button class="book">Book Now</button>
+                </li>
+                <li class="europe tour on-sale" data-discount="176">
+                    <h2>Paris, France</h2>
+                    <span class="details">$2,299 for 7 nights</span>
+                    <button class="book">Book Now</button>
+                </li>
+                <li class="asia tour featured" data-discount="349">
+                    <h2>Tokyo, Japan</h2>
+                    <span class="details">$3,799 for 7 nights</span>
+                    <button class="book">Book Now</button>
+                </li>
+            </ul>
+            <ul id="filters">
+                <li><button class="on-sale">On Sale</button></li>
+                <li><button class="featured">Featured</button></li>
+            </ul>
+        </div>
+
+        <div id="tourPhotos">
+            <h2>Paris, France Tour</h2>
+            <p>$2,499 for 7 Nights</p>
+            <button>See photos from our last tour</button>
+            <ul class="photos">
+                <li>
+                    <img src="/assets/photos/paris1.jpg">
+                    <span>Arc de Triomphe</span>
+                </li>
+                <li>
+                    <img src="/assets/photos/paris2.jpg">
+                    <span>The Eiffel Tower</span>
+                </li>
+                <li>
+                    <img src="/assets/photos/paris3.jpg">
+                    <span>Notre Dame de Paris</span>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="tourPrice" data-daily-price="357">
+            <h2>Paris, France Tour</h2>
+            <p>$<span id="total">2,499</span> for <span id="nights-count">7</span> Nights</p>
+            <p>
+                <label for="nights">Number of Nights</label>
+            </p>
+            <p>
+                <input type="number" id="nights" value="7">
+            </p>
+        </div>
+
+    </body>
+
+</html>
+
+
